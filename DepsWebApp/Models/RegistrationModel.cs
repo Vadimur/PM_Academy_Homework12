@@ -11,14 +11,14 @@ namespace DepsWebApp.Models
         /// Registration login
         /// </summary>
         [Required]
-        [MinLength(6)]
+        [StringLength(6)]
         public string Login { get; set; }
 
         /// <summary>
         /// Registration password
         /// </summary>
         [Required]
-        [MinLength(6)]
+        [StringLength(6)]
         public string Password { get; set; }
     }
 }
